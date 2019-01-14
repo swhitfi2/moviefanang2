@@ -1,11 +1,8 @@
-
-<!--<router-outlet></router-outlet>-->
-
 <br/>
 <div class="container">
   <div class="row">
     <div class="col-md-.5"></div>
-    <div class="col-md-11">
+    <div class="col-md-11.5">
       <form>
         <div class="form-row">
 
@@ -63,12 +60,9 @@
                     placeholder="Fan Name" class="form-control"></td>
                 <td><input type="text" name="email" id="email" (keypress)="submitMoviefan($event, moviefan)" [(ngModel)]="moviefan.email"
                      placeholder="Email" class="form-control"></td>
-                
-
                 <td><input type="text" name="favoriteMovie" id="favoriteMovie" (keypress)="submitMoviefan($event, moviefan)" [(ngModel)]="moviefan.favoriteMovie" 
                     placeholder="Favorite Movie" class="form-control"></td>
-                 
-                 <td>{{moviefan.date | date}}</td>
+                     <td>{{moviefan.date | date}}</td>
                 <td>
                   <input type="text" name="status" id="status" (keypress)="submitMoviefan($event, moviefan)" [(ngModel)]="moviefan.status"
                     placeholder="Status" class="form-control">

@@ -42,7 +42,7 @@ create() {
 }
 
 //edit function
-editmoviefan(moviefan: MovieFan) {
+editMoviefan(moviefan: MovieFan) {
   console.log(moviefan)//debug code line to see values
    if(this.moviefansList.includes(moviefan)){ // is this a moviefan retrieved from the api
     if(!this.editMoviefans.includes(moviefan)){ //is this in the list to be edited
@@ -72,12 +72,12 @@ editmoviefan(moviefan: MovieFan) {
   //listening for the enter key event if selected edit moviefan field
   submitMoviefan(event, moviefan:MovieFan){
     if(event.keyCode ==13){ // keycode ==13 is the enter key
-      this.editmoviefan(moviefan)
+      this.editMoviefan(moviefan)
     }
   }
 
   //delete function
-  deletemoviefan(moviefan: MovieFan) {
+  deleteMoviefan(moviefan: MovieFan) {
     this.moviefanService.deleteMoviefan(moviefan._id).subscribe(res => {
       this.moviefansList.splice(this.moviefansList.indexOf(moviefan), 1);
       //betterway can ask api for the list
